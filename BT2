@@ -1,0 +1,39 @@
+//Bai tap tinh S = 1 + 2 + 3 + ... +n 
+// Cach 1 Dung while
+#include<stdio.h>
+int main (){
+//	Khai bao bien n , S  ,i
+	int i , n , S;
+	i=1;
+	S=0;
+	printf("Nhap vao so n  : ");
+	scanf("%d",&n);
+//	Su dung vong lap while
+	 while (i<=n){
+	 	S = S + i;
+		 i++;
+		  
+
+	 }  
+	printf("Tong cua S la : %d",S);
+	
+}
+// Cach 2 dung for
+   #include<stdio.h>
+    int main(){
+	
+	int n,i;
+    int sum=0;
+    printf("Nhap n: ");
+    scanf("%d",&n);
+    sum = (n * (n + 1) * (2 * n + 1 )) / 6;
+    printf("S : ");
+    for(i =1;i<=n;i++){
+         if (i != n)
+             printf("%d^2 + ",i);
+         else
+             printf("%d^2 = %d ",i,sum);
+    }
+
+    return 0;
+}
