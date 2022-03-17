@@ -1,0 +1,19 @@
+//Bai tap tinh S = 1 + 2 + 3 + ... +n 
+#include<stdio.h>
+int main (){
+//	Khai bao bien n , S  ,i
+	int i , n , S;
+	i=1;
+	S=0;
+	printf("Nhap vao so n  : ");
+	scanf("%d",&n);
+//	Su dung vong lap while
+	 while (i<=n){
+	 	S = S + i;
+		 i++;
+		  
+
+	 }  
+	printf("Tong cua S la : %d",S);
+	
+}
